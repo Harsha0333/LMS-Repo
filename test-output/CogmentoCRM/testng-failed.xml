@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [CogmentoCRM]" parallel="tests">
+  <parameter name="Browser" value="FireFox"/>
+  <test thread-count="2" name="FireFoxTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.TestCases.LoginTest">
+        <methods>
+          <include name="startExtendReport"/>
+          <include name="verifyPageTitle"/>
+          <include name="flushReport"/>
+          <include name="verifyThatGoto"/>
+          <include name="verifyForgotPass"/>
+          <include name="setup"/>
+          <include name="verifyLoginTest" invocation-numbers="0"/>
+          <include name="verifyinvalidLoginLogout"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.LoginTest -->
+      <class name="com.qa.TestCases.HomeTest">
+        <methods>
+          <include name="startExtendReport"/>
+          <include name="flushReport"/>
+          <include name="verifyUsername"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.HomeTest -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+  <test thread-count="2" name="ChromeTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.TestCases.LoginTest">
+        <methods>
+          <include name="startExtendReport"/>
+          <include name="verifyPageTitle"/>
+          <include name="flushReport"/>
+          <include name="verifyThatGoto"/>
+          <include name="verifyForgotPass"/>
+          <include name="setup"/>
+          <include name="verifyLoginTest" invocation-numbers="0"/>
+          <include name="verifyinvalidLoginLogout"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.LoginTest -->
+      <class name="com.qa.TestCases.HomeTest">
+        <methods>
+          <include name="startExtendReport"/>
+          <include name="flushReport"/>
+          <include name="verifyUsername"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.HomeTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [CogmentoCRM] -->

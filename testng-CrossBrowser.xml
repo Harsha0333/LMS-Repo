@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CogmentoCRM" thread-count="2" parallel="tests" >
+<parameter name="Browser" value="Chrome" />
+  <test name="ChromeTest">
+    <classes>
+      <class name="com.qa.TestCases.HomeTest"/>
+      <class name="com.qa.TestCases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <parameter name="Browser" value="FireFox" />
+   <test name="FireFoxTest">
+    <classes>
+      <class name="com.qa.TestCases.HomeTest"/>
+      <class name="com.qa.TestCases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

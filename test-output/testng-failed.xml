@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <parameter name="Browser" value="Chrome"/>
+  <test name="Test(failed)(failed)">
+    <classes>
+      <class name="com.qa.TestCases.TQLoginTest">
+        <methods>
+          <include name="startExtendReport"/>
+          <include name="flushReport"/>
+          <include name="getResult"/>
+          <include name="verifyUsername1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.TQLoginTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
